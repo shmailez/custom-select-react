@@ -93,21 +93,10 @@ const CustomSelect = <T,>({
           placeholder="Поиск..."
           className="custom-select-search"
         />
-        {/* <div className="dropdown-arrow-wrapper">
-          <span className="dropdown-arrow">&#9662;</span>
-        </div>
-        <span className="dropdown-arrow">&#9662;</span> */}
       </div>
 
       {isDropdownOpen && (
         <div className="custom-select-dropdown">
-          {/* <input
-            type="text"
-            value={searchTerm}
-            onChange={handleSearchChange}
-            placeholder="Поиск..."
-            className="custom-select-search"
-          /> */}
           {filteredOptions.length > 0 ? (
             CustomDropdown ? (
               <CustomDropdown
